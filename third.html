@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge-online</title>
+    <style>
+        .header {
+            background-color: #2e2e2e;
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            animation: scroll 60s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        input{
+          margin-left: 530px;
+          border: 2px solid black;
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px black;
+        }
+        button{
+          border: 1px solid black;
+          cursor: pointer;
+          height: 30px;
+          width: 60px;
+          border-radius: 10px;
+          box-shadow: 2px 2px 5px black;
+        }
+        button:hover{
+          background-color: rgb(103, 199, 132);
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="scrolling-text">
+        Plz scan and pay the amount and fill the UPI Ref NO. recharge will be done within 2-3 minutes.
+    </div>
+</div>
+<img style="height: 300px; width: 300px; margin-left: 500px; margin-top: 150px;" src="qr.jpg" alt="">
+<form onsubmit="return validateForm()" action="fourth.html">
+    <input id="upiRefNo" type="text" placeholder="UPI Ref No" required>
+    <button type="submit">Submit</button>
+</form>
+<script>
+    function validateForm() {
+        const value = document.getElementById("upiRefNo").value;
+        if (!/^\d{12}$/.test(value)) {
+            alert("Please enter exactly 12 numeric digits for the UPI Ref No.");
+            return false; 
+        }
+        return true; 
+    }
+</script>
+</body>
+</html>
+
