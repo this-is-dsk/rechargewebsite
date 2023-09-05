@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIM Card Recharge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+  <div class="header">
+    <h1 style="color: black;">SIM Card Recharge</h1>
+    <p style="color: black;">Recharge any SIM card easily with discount.</p>
+  </div>
+  <div class="container">
+    <div class="recharge-form">
+      <h2>Enter Mobile Number</h2>
+      <form action="second.html" method="get" target="_blank">
+        <input id="mobileNumberInput" type="text" placeholder="Enter mobile number"required>
+        <select required>
+          <option value="">Select Mobile Network Operator </option>
+          <option value="JIO">JIO</option> 
+          <option value="AIRTEL">AIRTEL</option>
+          <option value="VI">VI</option>
+        </select>
+        <button id="rechargeButton" type="submit">Recharge Now</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
