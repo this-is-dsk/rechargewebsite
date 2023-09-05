@@ -1,0 +1,86 @@
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .header {
+    background-color: #7cb9b4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  .recharge-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .recharge-form input[type="text"],
+  .recharge-form select,
+  .recharge-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .recharge-form button {
+    background-color: #7cb9b4;
+    color: black;
+    cursor: pointer;
+  }
+  .recharge-form button:hover{
+    background-color: #3268a5;
+  }
+
+
+  /* styling for second html page */
+
+  
+  .head
+{
+    margin: 50px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+ 
+     .box
+    {
+        height: 300px;
+        width: 300px;
+        background-color: rgb(143, 202, 202);
+        padding: 10px;
+        border-radius: 20px;
+        margin: 20px;
+        box-shadow: 5px 5px 10px black;}
+     
+    img{
+        margin-top: 20px;
+        height: 126px;
+        width: 204px;
+    }
+
+
+    .rechargebutton {
+display: inline-block;
+margin-left: 96px;
+margin-top: 15px;
+padding: 10px 20px; 
+background-color: #007bff; 
+color: #fff; 
+text-decoration: none; 
+border: none; 
+border-radius: 5px; 
+cursor: pointer; 
+}
+
+
+.rechargebutton:hover {
+background-color: #0056b3; 
+}
