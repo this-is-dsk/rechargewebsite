@@ -1,3 +1,31 @@
+@media screen and (max-width: 767px) {
+  .header {
+      padding: 5px;
+      font-size: 20px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .recharge-form {
+      padding: 10px;
+  }
+
+  .recharge-form input[type="text"],
+  .recharge-form select,
+  .recharge-form button {
+      padding: 5px;
+      margin-bottom: 10px;
+  }
+
+  .rechargebutton {
+      margin-left: 0;
+      margin-top: 10px;
+      padding: 5px 10px;
+  }
+}
+
 .body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -39,6 +67,7 @@
     background-color: #3268a5;
   }
 
+  
 
   /* styling for second html page */
 
@@ -84,3 +113,4 @@ cursor: pointer;
 .rechargebutton:hover {
 background-color: #0056b3; 
 }
+  
